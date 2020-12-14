@@ -11,27 +11,21 @@ workflows:
           tag: 'latest'
           dryrun: true
       - run:
-          name: Install dependencies
-          command: yarn
-      - run:
-          name: clean
-          command: yarn clean
-      - run:
-          name: compile
-          command: yarn compile
+          name: Install dependencies, clean files, compile
+          command: yarn; yarn clean; yarn compile
 
 #          need to commit changes?
 
-    - release-management/validate-pr:
-        filters:
-          branches:
-            ignore: master
-    - release-management/release-package:
-        dryrun: true
-        sign: true
-        github-release: true
-        requires:
-          - node-latest
-        filters:
-          branches:
-            only: master
+      - release-management/validate-pr:
+          filters:
+            branches:
+              ignore: master
+      - release-management/release-package:
+          dryrun: true
+          sign: true
+          github-release: true
+          requires:
+            - node-latest
+          filters:
+            branches:
+              only: master
