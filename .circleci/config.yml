@@ -34,22 +34,24 @@ jobs:
             echo "ERROR: more files were changed than expected";
             exit 1
 
-  pin-and-commit:
-    executor: release-management/default
-    steps:
-      - checkout
-      - release-management/pin-dependencies:
-          - dryrun: false
-      - commit
-
 
 workflows:
   version: 2
   test-and-release:
     jobs:
-      - pin-and-commit
-      - yarn
+      - release-management/pin-dependencies
+      - commit:
+          - requires:
+              - release-management/pin-dependencies
+      - yarn:
+          - requires:
+              - release-management/pin-dependencies
+              - commit
       - release-management/validate-pr:
+          requires:
+            - release-management/pin-dependencies
+            - commit
+            - yarn
           filters:
             branches:
               ignore: master
@@ -59,3 +61,7 @@ workflows:
           sign: true
           github-release: true
           use-tests: false
+          requires:
+            - release-management/pin-dependencies
+            - commit
+            - yarn
