@@ -27,7 +27,7 @@ workflows:
             branches:
               ignore: master
       - release-management/release-package:
-          dryrun: false
+          dryrun: true
           sign: true
           github-release: true
           requires:
