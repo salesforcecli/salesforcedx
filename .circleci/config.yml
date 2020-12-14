@@ -55,13 +55,10 @@ workflows:
           requires:
             - commit
       - release-management/validate-pr:
-          requires:
-            - yarn
           filters:
             branches:
               ignore: master
       - release-management/release-package:
-          dryrun: true
           tag: testing
           sign: true
           github-release: true
