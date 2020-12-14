@@ -45,12 +45,9 @@ workflows:
               - release-management/pin-dependencies
       - yarn:
           - requires:
-              - release-management/pin-dependencies
               - commit
       - release-management/validate-pr:
           requires:
-            - release-management/pin-dependencies
-            - commit
             - yarn
           filters:
             branches:
@@ -62,6 +59,4 @@ workflows:
           github-release: true
           use-tests: false
           requires:
-            - release-management/pin-dependencies
-            - commit
             - yarn
