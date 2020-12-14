@@ -10,23 +10,28 @@ workflows:
       - release-management/pin-dependencies:
           tag: 'latest'
           dryrun: true
+      - run:
+          name: Install dependencies
+          command: yarn
+      - run:
+          name: clean
+          command: yarn clean
+      - run:
+          name: compile
+          command: yarn compile
 
-          # change 2
+#          need to commit changes?
 
-#      - release-management/validate-pr:
-#          filters:
-#            branches:
-#              ignore: master
-#      - release-management/test-package:
-#          name: node-latest
-#          node_version: latest
-#      - release-management/test-package:
-#          name: node-12
-#      - release-management/release-package:
-#          sign: true
-#          github-release: true
-#          requires:
-#            - node-latest
-#          filters:
-#            branches:
-#              only: master
+      - release-management/validate-pr:
+          filters:
+            branches:
+              ignore: master
+      - release-management/release-package:
+          dryrun: false
+          sign: true
+          github-release: true
+          requires:
+            - node-latest
+          filters:
+            branches:
+              only: master
