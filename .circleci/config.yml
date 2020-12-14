@@ -5,15 +5,9 @@ orbs:
 
 jobs:
   yarnSteps:
-    - run:
-        name: Install Dependencies
-        command: yarn
-    - run:
-        name: Yarn clean
-        command: yarn clean
-    - run:
-        name: Yarn compile
-        command: yarn compile
+    steps:
+      - checkout
+      - run: yarn; yarn clean; yarn compile;
 
 workflows:
   version: 2
