@@ -22,16 +22,16 @@ workflows:
 
 #          need to commit changes?
 
-      - release-management/validate-pr:
-          filters:
-            branches:
-              ignore: master
-      - release-management/release-package:
-          dryrun: true
-          sign: true
-          github-release: true
-          requires:
-            - node-latest
-          filters:
-            branches:
-              only: master
+    - release-management/validate-pr:
+        filters:
+          branches:
+            ignore: master
+    - release-management/release-package:
+        dryrun: true
+        sign: true
+        github-release: true
+        requires:
+          - node-latest
+        filters:
+          branches:
+            only: master
