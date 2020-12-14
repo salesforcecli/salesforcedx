@@ -9,35 +9,44 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: yarn
+          name: Install dependencies + Compile + Clean
+          command: |
+            yarn;
+            yarn compile;
+            yarn clean;
+
+  commit:
+    executor: release-management/default
+    steps:
+      - checkout
       - run:
-          name: clean
-          command: yarn clean
-      - run:
-          name: compile
-          command: yarn compile
+          name: commit package.json change
+          command: |
+            # if we have ONLY changed the package.json then we can commit and push
+            if  git status --porcelain v1 | GREP 'package.json' && git status --porcelain v1 | wc -l == 1; then
+              git commit -m "Automatically adding package.json [skip ci]";
+              git push;
+              exit 0
+            fi
+            # we've changed other things, so error
+            echo "ERROR: more files were changed than expected"
+            exit 1
+
 
 workflows:
   version: 2
   test-and-release:
     jobs:
-      - release-management/pin-dependencies:
-            dryrun: true
-#     need to commit changes here?
+      - release-management/pin-dependencies
+      - commit
       - yarn
       - release-management/validate-pr:
           filters:
             branches:
               ignore: master
       - release-management/release-package:
+          dryrun: true
           tag: testing
           sign: true
           github-release: true
           use-tests: false
-#          requires:
-#            - node-latest
-#          filters:
-#            branches:
-#              only: master
-#
