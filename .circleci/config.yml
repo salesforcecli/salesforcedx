@@ -35,8 +35,8 @@ workflows:
           dryrun: true
           sign: true
           github-release: true
-          requires:
-            - release-management/node-latest
+#          requires:
+#            - node-latest
           filters:
             branches:
               only: master
