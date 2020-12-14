@@ -30,6 +30,12 @@ jobs:
               exit 0;
             fi
 
+            # there are no changes to be committed.
+            if  git status --porcelain v1 | grep 'package.json' && git status --porcelain v1 | wc -l == 0; then
+              echo "No Changes Detected... continuing";
+              exit 0;
+            fi
+
             # we've changed other things, so error
             echo "ERROR: more files were changed than expected";
             exit 1
