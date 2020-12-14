@@ -22,14 +22,16 @@ jobs:
       - run:
           name: commit package.json change
           command: |
+            git status;
             # if we have ONLY changed the package.json then we can commit and push
             if  git status --porcelain v1 | grep 'package.json' && git status --porcelain v1 | wc -l == 1; then
               git commit -m "Automatically adding package.json [skip ci]";
               git push;
-              exit 0
+              exit 0;
             fi
+
             # we've changed other things, so error
-            echo "ERROR: more files were changed than expected"
+            echo "ERROR: more files were changed than expected";
             exit 1
 
 
