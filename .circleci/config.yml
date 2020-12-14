@@ -38,7 +38,8 @@ jobs:
     executor: release-management/default
     steps:
       - checkout
-      - release-management/pin-dependencies
+      - release-management/pin-dependencies:
+          - dryrun: false
       - commit
 
 
