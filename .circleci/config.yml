@@ -25,8 +25,8 @@ workflows:
               ignore: master
       - release-management/release-package:
           dryun: true
-          sign: true
-          github-release: true
+          sign: false
+          github-release: false
           requires:
             - node-latest
           filters:
