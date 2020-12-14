@@ -31,7 +31,7 @@ workflows:
             branches:
               ignore: master
       - release-management/release-package:
-          dryrun: true
+          tag: testing
           sign: true
           github-release: true
           use-tests: false
