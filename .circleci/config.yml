@@ -4,11 +4,19 @@ orbs:
   release-management: salesforce/npm-release-management@dev:alpha
 
 jobs:
-  yarnSteps:
+  yarn:
     executor: release-management/default
     steps:
       - checkout
-      - run: yarn; yarn clean; yarn compile;
+      - run:
+          name: Install dependencies
+          command: yarn
+      - run:
+          name: clean
+          command: yarn clean
+      - run:
+          name: compile
+          command: yarn compile
 
 workflows:
   version: 2
@@ -18,15 +26,15 @@ workflows:
             tag: 'latest'
             dryrun: true
 #     need to commit changes here?
-      - yarnSteps
+      - yarn
       - release-management/validate-pr:
           filters:
             branches:
               ignore: master
       - release-management/release-package:
-          dryun: true
-          sign: false
-          github-release: false
+          dryrun: true
+          sign: true
+          github-release: true
           requires:
             - node-latest
           filters:
