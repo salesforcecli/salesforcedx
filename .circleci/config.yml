@@ -36,7 +36,7 @@ workflows:
           sign: true
           github-release: true
           requires:
-            - node-latest
+            - release-management/node-latest
           filters:
             branches:
               only: master
