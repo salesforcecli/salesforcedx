@@ -23,7 +23,7 @@ jobs:
           name: commit package.json change
           command: |
             # if we have ONLY changed the package.json then we can commit and push
-            if  git status --porcelain v1 | GREP 'package.json' && git status --porcelain v1 | wc -l == 1; then
+            if  git status --porcelain v1 | grep 'package.json' && git status --porcelain v1 | wc -l == 1; then
               git commit -m "Automatically adding package.json [skip ci]";
               git push;
               exit 0
