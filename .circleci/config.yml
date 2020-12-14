@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   yarnSteps:
-    executor: default
+    executor: release-management/default
     steps:
       - checkout
       - run: yarn; yarn clean; yarn compile;
