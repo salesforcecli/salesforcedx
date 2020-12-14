@@ -5,6 +5,7 @@ orbs:
 
 jobs:
   yarnSteps:
+    executor: default
     steps:
       - checkout
       - run: yarn; yarn clean; yarn compile;
