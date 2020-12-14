@@ -23,7 +23,6 @@ workflows:
   test-and-release:
     jobs:
       - release-management/pin-dependencies:
-            tag: 'latest'
             dryrun: true
 #     need to commit changes here?
       - yarn
@@ -37,6 +36,6 @@ workflows:
           github-release: true
 #          requires:
 #            - node-latest
-          filters:
-            branches:
-              only: master
+#          filters:
+#            branches:
+#              only: master
