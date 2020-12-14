@@ -36,16 +36,16 @@ jobs:
 
 
 workflows:
-  version: 2
+  version: 2.1
   test-and-release:
     jobs:
       - release-management/pin-dependencies
       - commit:
-          - requires:
-              - release-management/pin-dependencies
+          requires:
+            - release-management/pin-dependencies
       - yarn:
-          - requires:
-              - commit
+          requires:
+            - commit
       - release-management/validate-pr:
           requires:
             - yarn
