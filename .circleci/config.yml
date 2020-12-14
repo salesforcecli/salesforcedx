@@ -37,8 +37,10 @@ jobs:
             fi
 
             # we've changed other things, so error
-            echo "ERROR: more files were changed than expected";
-            exit 1
+            if  git status --porcelain v1 | grep 'package.json' && git status --porcelain v1 | wc -l > 1; then
+              echo "ERROR: more files were changed than expected";
+              exit 1
+            fi
 
 
 workflows:
