@@ -16,5 +16,6 @@ workflows:
           tag: testing
           sign: true
           github-release: true
+          dryrun: true
           requires:
             - release-management/pin-dependencies
