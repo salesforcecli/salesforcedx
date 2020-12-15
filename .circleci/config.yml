@@ -43,6 +43,7 @@ jobs:
   pinAndCommit:
     executor: release-management/default
     steps:
+      - checkout
       - release-management/pin-dependencies
       - yarn:
           requires:
@@ -55,7 +56,6 @@ workflows:
   version: 2.1
   test-and-release:
     jobs:
-      - checkout
       - pinAndCommit
       - release-management/validate-pr:
           filters:
