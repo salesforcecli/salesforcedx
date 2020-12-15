@@ -7,18 +7,16 @@ jobs:
   yarn:
     executor: release-management/default
     steps:
-      - checkout
       - run:
           name: Install dependencies + Compile + Clean
           command: |
-            yarn;
+            yarn install --force;
             yarn compile;
             yarn clean;
 
   commit:
     executor: release-management/default
     steps:
-      - checkout
       - run:
           name: commit package.json change
           command: |
@@ -42,18 +40,23 @@ jobs:
               exit 1
             fi
 
+  pinAndCommit:
+    executor: release-management/default
+    steps:
+      - release-management/pin-dependencies
+      - yarn:
+          requires:
+            - commit
+      - commit:
+          requires:
+            - release-management/pin-dependencies
 
 workflows:
   version: 2.1
   test-and-release:
     jobs:
-      - release-management/pin-dependencies
-      - commit:
-          requires:
-            - release-management/pin-dependencies
-      - yarn:
-          requires:
-            - commit
+      - checkout
+      - pinAndCommit
       - release-management/validate-pr:
           filters:
             branches:
