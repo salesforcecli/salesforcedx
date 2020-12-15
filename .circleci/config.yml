@@ -16,6 +16,5 @@ workflows:
           tag: testing
           sign: true
           github-release: true
-          use-tests: false
           requires:
             - release-management/pin-dependencies
