@@ -24,8 +24,12 @@ workflows:
           node_version: latest
       - release-management/test-package:
           name: node-12
-      - release-management/release-package:
+      - approval:
           type: approval
+          requires:
+            - node-latest
+            - node-12
+      - release-management/release-package:
           dry-run: true
           tag: testing
           sign: true
@@ -33,4 +37,4 @@ workflows:
             - release-management/pin-dependencies
           github-release: true
           requires:
-            - node-latest
+            - approval
