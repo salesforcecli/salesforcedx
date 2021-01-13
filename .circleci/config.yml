@@ -1,13 +1,12 @@
 ---
 version: 2.1
 orbs:
-  release-management: salesforce/npm-release-management@4
+  release-management: salesforce/npm-release-management@dev:alpha
 
 workflows:
   version: 2.1
-  test-and-release:
+  test:
     jobs:
-      - release-management/pin-dependencies
       - release-management/validate-pr:
           filters:
             branches:
@@ -17,13 +16,21 @@ workflows:
           node_version: latest
       - release-management/test-package:
           name: node-12
+
+  release:
+    jobs:
+      - release-management/test-package:
+          name: node-latest
+          node_version: latest
+      - release-management/test-package:
+          name: node-12
       - release-management/release-package:
+          type: approval
+          dry-run: true
           tag: testing
           sign: true
+          pre-job-steps:
+            - release-management/pin-dependencies
           github-release: true
           requires:
-            - release-management/pin-dependencies
             - node-latest
-          filters:
-            branches:
-              only: main
