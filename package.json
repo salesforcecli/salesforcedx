@@ -7,13 +7,11 @@
   "files": [
     "oclif.manifest.json",
     "lib/**/*.js",
-    "commands/**/*.js",
-    "/lib",
     "/messages",
     "/oclif.manifest.json"
   ],
   "oclif": {
-    "commands": "./commands",
+    "commands": "./bin/commands",
     "plugins": [
       "salesforce-alm",
       "@salesforce/plugin-templates",
