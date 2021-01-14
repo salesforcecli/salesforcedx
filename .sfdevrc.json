@@ -1,0 +1,6 @@
+{
+  "exclude-scripts": ["test", "pretest", "lint"],
+  "scripts": {
+    "sf-lint": "eslint 'src/**/*.ts'"
+  }
+}
