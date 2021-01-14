@@ -22,19 +22,26 @@ workflows:
       - release-management/test-package:
           name: node-latest
           node_version: latest
+          filters:
+            branches:
+              only: main
       - release-management/test-package:
           name: node-12
+          filters:
+            branches:
+              only: main
       - approval:
           type: approval
           requires:
             - node-latest
             - node-12
       - release-management/release-package:
+          tag: latest-rc
           dryrun: true
-          tag: testing
           sign: true
           pre-job-steps:
-            - release-management/pin-dependencies
+            - release-management/pin-dependencies:
+                tag: latest-rc
           github-release: true
           requires:
             - approval
