@@ -1,19 +1,17 @@
 {
   "name": "salesforcedx",
-  "version": "50.14.0",
-  "description": "",
+  "version": "50.14.1",
+  "description": "The Salesforce DX plugin aggregates all force topic commands into a single plugin that is bundled with the Salesforce CLI.",
   "author": "Salesforce",
   "bugs": "https://github.com/forcedotcom/cli/issues",
   "files": [
     "oclif.manifest.json",
     "lib/**/*.js",
-    "commands/**/*.js",
-    "/lib",
     "/messages",
     "/oclif.manifest.json"
   ],
   "oclif": {
-    "commands": "./commands",
+    "commands": "./lib/commands",
     "plugins": [
       "salesforce-alm",
       "@salesforce/plugin-templates",
