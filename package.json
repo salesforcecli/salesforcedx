@@ -29,6 +29,7 @@
     "@salesforce/plugin-custom-metadata",
     "@salesforce/plugin-schema",
     "@salesforce/plugin-user",
+    "@salesforce/plugin-telemetry",
     "@salesforce/plugin-templates",
     "@salesforce/sfdx-plugin-lwc-test",
     "salesforce-alm"
