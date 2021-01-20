@@ -5,7 +5,7 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-import { LintCommand } from 'salesforce-lightning-cli/commands/lightning/lint';
+import * as LintCommand from 'salesforce-lightning-cli/commands/lightning/lint';
 
 class ForceLintCommand extends LintCommand {}
 

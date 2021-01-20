@@ -1,19 +1,16 @@
 {
   "name": "salesforcedx",
-  "version": "50.6.0",
-  "description": "",
+  "version": "50.14.4",
+  "description": "The Salesforce DX plugin aggregates all force topic commands into a single plugin that is bundled with the Salesforce CLI.",
   "author": "Salesforce",
   "bugs": "https://github.com/forcedotcom/cli/issues",
   "files": [
-    "oclif.manifest.json",
-    "lib/**/*.js",
-    "commands/**/*.js",
     "/lib",
     "/messages",
     "/oclif.manifest.json"
   ],
   "oclif": {
-    "commands": "./commands",
+    "commands": "./lib/commands",
     "plugins": [
       "salesforce-alm",
       "@salesforce/plugin-templates",
@@ -22,7 +19,7 @@
       "@salesforce/plugin-apex",
       "@salesforce/plugin-schema",
       "@salesforce/plugin-user",
-      "@salesforce/plugin-telemetry"
+      "@salesforce/plugin-limits"
     ]
   },
   "pinnedDependencies": [
@@ -32,6 +29,7 @@
     "@salesforce/plugin-telemetry",
     "@salesforce/plugin-templates",
     "@salesforce/sfdx-plugin-lwc-test",
+    "@salesforce/plugin-limits",
     "salesforce-alm"
   ],
   "dependencies": {
@@ -39,13 +37,14 @@
     "@salesforce/command": "^3.0.5",
     "@salesforce/core": "^2.15.2",
     "@salesforce/plugin-apex": "0.1.4",
-    "@salesforce/plugin-custom-metadata": "1.0.10",
-    "@salesforce/plugin-schema": "^1.0.0",
+    "@salesforce/plugin-custom-metadata": "1.0.11",
+    "@salesforce/plugin-limits": "1.0.2",
+    "@salesforce/plugin-schema": "1.0.3",
     "@salesforce/plugin-telemetry": "^1.0.0",
-    "@salesforce/plugin-templates": "50.1.0",
-    "@salesforce/plugin-user": "^1.0.0",
+    "@salesforce/plugin-templates": "50.4.0",
+    "@salesforce/plugin-user": "1.0.7",
     "@salesforce/sfdx-plugin-lwc-test": "0.1.7",
-    "salesforce-alm": "50.6.0",
+    "salesforce-alm": "50.14.0",
     "salesforce-lightning-cli": "3.0.0",
     "tslib": "^1"
   },
@@ -106,10 +105,9 @@
     "compile": "sf-compile",
     "docs": "sf-docs",
     "format": "sf-format",
-    "lint": "sf-lint",
+    "lint": "eslint 'src/**/*.ts'",
     "prepack": "sf-build",
-    "pretest": "sf-compile-test",
-    "test": "sf-test",
+    "test": "echo 'Salesforcedx is an aggregator plugin that does not contain any tests'",
     "version": "oclif-dev readme && git add README.md"
   },
   "husky": {
