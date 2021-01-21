@@ -12,18 +12,17 @@
   "oclif": {
     "commands": "./lib/commands",
     "plugins": [
-      "salesforce-alm",
-      "@salesforce/plugin-templates",
-      "@salesforce/sfdx-plugin-lwc-test",
-      "@salesforce/plugin-custom-metadata",
       "@salesforce/plugin-apex",
+      "@salesforce/plugin-custom-metadata",
+      "@salesforce/plugin-limits",
       "@salesforce/plugin-schema",
+      "@salesforce/plugin-templates",
       "@salesforce/plugin-user",
-      "@salesforce/plugin-limits"
+      "@salesforce/sfdx-plugin-lwc-test",
+      "salesforce-alm"
     ]
   },
   "pinnedDependencies": [
-    "@salesforce/plugin-alias",
     "@salesforce/plugin-custom-metadata",
     "@salesforce/plugin-limits",
     "@salesforce/plugin-schema",
@@ -33,7 +32,6 @@
     "salesforce-alm"
   ],
   "dependencies": {
-    "@salesforce/plugin-alias": "1.1.5",
     "@salesforce/plugin-apex": "0.1.4",
     "@salesforce/plugin-custom-metadata": "1.0.11",
     "@salesforce/plugin-limits": "1.0.2",
