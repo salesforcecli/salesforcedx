@@ -79,9 +79,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "engines": {
-    "node": ">=8.10.0"
-  },
   "homepage": "https://github.com/salesforcecli/salesforcedx",
   "keywords": [
     "force",
