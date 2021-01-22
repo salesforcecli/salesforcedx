@@ -1,6 +1,6 @@
 {
   "name": "salesforcedx",
-  "version": "50.14.4",
+  "version": "50.15.0",
   "description": "The Salesforce DX plugin aggregates all force topic commands into a single plugin that is bundled with the Salesforce CLI.",
   "author": "Salesforce",
   "bugs": "https://github.com/forcedotcom/cli/issues",
