@@ -1765,10 +1765,10 @@ chai-fs@2.0.0:
     bit-mask "^1.0.1"
     readdir-enhanced "^1.4.0"
 
-chai-string@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/chai-string/-/chai-string-1.2.0.tgz#83c17d6f45e93d0cb755b0bb0bca36d30136d163"
-  integrity sha1-g8F9b0XpPQy3VbC7C8o20wE20WM=
+chai-string@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/chai-string/-/chai-string-1.5.0.tgz#0bdb2d8a5f1dbe90bc78ec493c1c1c180dd4d3d2"
+  integrity sha512-sydDC3S3pNAQMYwJrs6dQX0oBQ6KfIPuOZ78n7rocW0eJJlsHPh2t3kwW7xfwYA/1Bf6/arGtSUo16rxR2JFlw==
 
 chai@^4.2.0:
   version "4.2.0"
