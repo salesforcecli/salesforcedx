@@ -771,10 +771,10 @@
     yeoman-environment "2.4.0"
     yeoman-generator "4.0.1"
 
-"@salesforce/plugin-user@1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-user/-/plugin-user-1.0.11.tgz#5225c3d648f6aff9277849954694435779294597"
-  integrity sha512-c3RAc/OTGS4gQvH8sOW5EoW1yes+HBjyncF8BeDONy9GWiupcJ4ShMJEbl/Q2E8i+fGKDlwd5TSvzqaW6WFU9Q==
+"@salesforce/plugin-user@1.0.13":
+  version "1.0.13"
+  resolved "https://registry.npmjs.org/@salesforce/plugin-user/-/plugin-user-1.0.13.tgz#9f2e325cabdefac4590ae7b7309116603ab96bb3"
+  integrity sha512-4TbF/2P2JU9R+k6FpvVXaVsW7HKdDnC/So7YjmO8Cq9y0iFaTWw4uNR3IsKGzokNtfpewi2K/JGdR04pwIh+cA==
   dependencies:
     "@oclif/config" "^1.17.0"
     "@salesforce/command" "^3.0.4"
@@ -1290,14 +1290,6 @@ array-differ@^3.0.0:
   resolved "https://registry.yarnpkg.com/array-differ/-/array-differ-3.0.0.tgz#3cbb3d0f316810eafcc47624734237d6aee4ae6b"
   integrity sha512-THtfYS6KtME/yIAhKjZ2ul7XI96lQGHRputJQHO80LAWQnuGP4iCIN8vdMRboGbIEYBwU33q8Tch1os2+X0kMg==
 
-array-events@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/array-events/-/array-events-0.2.0.tgz#ff42ac53e66f485d6f883234c32252bc2286130e"
-  integrity sha1-/0KsU+ZvSF1viDI0wyJSvCKGEw4=
-  dependencies:
-    async-arrays "*"
-    extended-emitter "*"
-
 array-find-index@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
@@ -1396,13 +1388,6 @@ astral-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
   integrity sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
-
-async-arrays@*:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/async-arrays/-/async-arrays-1.0.1.tgz#347af2b70f2a7a5767a2d5679cc42bbf1c220fd9"
-  integrity sha1-NHrytw8qeldnotVnnMQrvxwiD9k=
-  dependencies:
-    sift "*"
 
 async-hook-jl@^1.7.6:
   version "1.7.6"
@@ -1528,12 +1513,12 @@ binaryextensions@^2.1.2:
   resolved "https://registry.yarnpkg.com/binaryextensions/-/binaryextensions-2.3.0.tgz#1d269cbf7e6243ea886aa41453c3651ccbe13c22"
   integrity sha512-nAihlQsYGyc5Bwq6+EsubvANYGExeJKHDO3RjnvwU042fawQTQfM3Kxn7IHUXQOz4bzfwsGYYHGSvXyW4zOGLg==
 
-bit-mask@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/bit-mask/-/bit-mask-1.0.2.tgz#42f708362119611d6223cd53202c79428bf70b81"
-  integrity sha512-UGtq08LSiazxL4zVmBzrhdCWnT4RWx3JhhD/3crhfv8xxjnVHxf/WoVjEstjSUaZeZRP7kZrWNqup1VvUClCaQ==
+bit-mask@0.0.2-alpha:
+  version "0.0.2-alpha"
+  resolved "https://registry.npmjs.org/bit-mask/-/bit-mask-0.0.2-alpha.tgz#42880fa80055151165d5fa15b331bc0459c27372"
+  integrity sha1-QogPqABVFRFl1foVszG8BFnCc3I=
   dependencies:
-    array-events "^0.2.0"
+    prime "0.0.5-alpha"
 
 bl@^1.0.0:
   version "1.2.3"
@@ -1770,19 +1755,17 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-chai-as-promised@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/chai-as-promised/-/chai-as-promised-7.1.1.tgz#08645d825deb8696ee61725dbf590c012eb00ca0"
-  integrity sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==
-  dependencies:
-    check-error "^1.0.2"
+chai-as-promised@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.npmjs.org/chai-as-promised/-/chai-as-promised-5.3.0.tgz#09d7a402908aa70dfdbead53e5853fc79d3ef21c"
+  integrity sha1-CdekApCKpw39vq1T5YU/x50+8hw=
 
-chai-fs@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/chai-fs/-/chai-fs-2.0.0.tgz#35ae039fbbb0710f5122aae17faba1e8f41107c6"
-  integrity sha1-Na4Dn7uwcQ9RIqrhf6uh6PQRB8Y=
+chai-fs@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/chai-fs/-/chai-fs-1.0.0.tgz#8b242852748a54f1df91f1ea430bb39748cf7421"
+  integrity sha1-iyQoUnSKVPHfkfHqQwuzl0jPdCE=
   dependencies:
-    bit-mask "^1.0.1"
+    bit-mask "0.0.2-alpha"
     readdir-enhanced "^1.4.0"
 
 chai-string@1.5.0:
@@ -2876,11 +2859,6 @@ eslint-config-salesforce-license@^0.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-salesforce-license/-/eslint-config-salesforce-license-0.1.0.tgz#2c821c28836650589d5f6e29d401720ee4b84dd3"
   integrity sha512-BH1tiDohVV3k4aVVVMomF9YSA8VLRdyB8Pmdjs9eaVKhCw84gktKbMIsPKPrCnqIECLNM5dagiZHNHaLopsqAA==
 
-eslint-config-salesforce-typescript@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-0.1.0.tgz#6af2fed6c770b16b83d0075b8a998da439676f0a"
-  integrity sha512-Itb6Bn0MSmx6GSWl1SMANKfq6sWCCDEmSElCLw2UziK0h2FgBdiFfpjarRONlcJnaHF1ow07TYcljVEXcP+C6g==
-
 eslint-config-salesforce-typescript@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-0.2.0.tgz#a680284de34a4943eec4ee95292433a9a4d829a5"
@@ -3176,14 +3154,6 @@ extend@^3.0.0, extend@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
-
-extended-emitter@*:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/extended-emitter/-/extended-emitter-1.0.4.tgz#f9327ecae71c693f4d91696be555664d364f8024"
-  integrity sha512-QBGuIo+pCXnYNeLUObaH/IKrCrzWzm4KhQNvA/mwNTs7/wzFylmA765zxh0WwWqpX1skQGXvzcRMHScc87Om/g==
-  dependencies:
-    sift "*"
-    wolfy87-eventemitter "*"
 
 external-editor@^3.0.3:
   version "3.1.0"
@@ -7111,11 +7081,6 @@ shimmer@^1.1.0, shimmer@^1.2.0:
   resolved "https://registry.yarnpkg.com/shimmer/-/shimmer-1.2.1.tgz#610859f7de327b587efebf501fb43117f9aff337"
   integrity sha512-sQTKC1Re/rM6XyFM6fIAGHRPVGvyXfgzIDvzoq608vM+jeyVD0Tu1E6Np0Kc2zAIFWIj963V2800iF/9LPieQw==
 
-sift@*:
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/sift/-/sift-13.5.0.tgz#0f46fd0b2432bd516307d2c32bff3b142a8ab530"
-  integrity sha512-YoS8hmXbmJcf1Gde5bR7+pq69+Nvfv5eHTyv4B00YxJAejTEfzvamG8LHzb0jAFFciMkY05K7GG3P7n/gm0+gg==
-
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
@@ -8123,11 +8088,6 @@ with-open-file@^0.1.6:
     p-finally "^1.0.0"
     p-try "^2.1.0"
     pify "^4.0.1"
-
-wolfy87-eventemitter@*:
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/wolfy87-eventemitter/-/wolfy87-eventemitter-5.2.9.tgz#e879f770b30fbb6512a8afbb330c388591099c2a"
-  integrity sha512-P+6vtWyuDw+MB01X7UeF8TaHBvbCovf4HPEMF/SV7BdDc1SMTiBy13SRD71lQh4ExFTG1d/WNzDGDCyOKSMblw==
 
 word-wrap@^1.0.3, word-wrap@~1.2.3:
   version "1.2.3"
