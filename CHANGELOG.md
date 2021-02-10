@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [51.0.1](https://github.com/salesforcecli/salesforcedx/compare/v51.0.0...v51.0.1) (2021-02-10)
+
+
+### Bug Fixes
+
+* reset apex to correct pinned version ([a2f2f65](https://github.com/salesforcecli/salesforcedx/commit/a2f2f6552fea43149928aad93378fd82c458b2d5))
+
 ## [51.0.0](https://github.com/salesforcecli/salesforcedx/compare/v50.17.0...v51.0.0) (2021-02-10)
 
 
