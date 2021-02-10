@@ -36,10 +36,10 @@
     "@salesforce/plugin-custom-metadata": "1.0.11",
     "@salesforce/plugin-limits": "1.0.3",
     "@salesforce/plugin-schema": "1.0.3",
-    "@salesforce/plugin-templates": "50.5.0",
-    "@salesforce/plugin-user": "1.0.13",
+    "@salesforce/plugin-templates": "50.6.0",
+    "@salesforce/plugin-user": "1.1.0",
     "@salesforce/sfdx-plugin-lwc-test": "0.1.7",
-    "salesforce-alm": "50.17.0",
+    "salesforce-alm": "51.0.1",
     "salesforce-lightning-cli": "3.0.0"
   },
   "devDependencies": {
