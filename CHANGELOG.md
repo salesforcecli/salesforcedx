@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [51.1.0](https://github.com/salesforcecli/salesforcedx/compare/v51.0.4...v51.1.0) (2021-02-22)
+
 ### [51.0.4](https://github.com/salesforcecli/salesforcedx/compare/v51.0.3...v51.0.4) (2021-02-19)
 
 ### [51.0.3](https://github.com/salesforcecli/salesforcedx/compare/v51.0.2...v51.0.3) (2021-02-19)
