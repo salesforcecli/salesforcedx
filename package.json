@@ -98,7 +98,7 @@
     "format": "sf-format",
     "lint": "eslint 'src/**/*.ts'",
     "prepack": "sf-build",
-    "test": "echo 'Salesforcedx is an aggregator plugin that does not contain any tests'",
+    "test": "sf-test",
     "version": "oclif-dev readme && git add README.md"
   },
   "husky": {
