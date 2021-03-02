@@ -533,12 +533,12 @@
   dependencies:
     fancy-test "^1.4.3"
 
-"@salesforce/apex-node@0.1.16":
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/@salesforce/apex-node/-/apex-node-0.1.16.tgz#a74cacf5ba52ce056b4736d880fd65ef2b835581"
-  integrity sha512-N6wDM+hIcqvd0iwWDeD45OviXD6vPztQl1d66XvzZWuvqht5HWLZ+NI2z7M5hiSHIKs4BpowTe5Z3W2QbVY9Gw==
+"@salesforce/apex-node@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@salesforce/apex-node/-/apex-node-0.1.4.tgz#2c81757f564702f037e8f26bc2a1bcd5d3bfd912"
+  integrity sha512-J+Ib3wOl/kXAeUibb+XvA7uM/x0PuJLfGd9RZQ7DQifE7tEIRifxTN3JD4yHxYTdAxhyt/UqTPY1xilgoVf84w==
   dependencies:
-    "@salesforce/core" "2.13.0"
+    "@salesforce/core" "2.11.0"
     faye "1.1.3"
 
 "@salesforce/bunyan@^2.0.0":
@@ -738,17 +738,17 @@
     fs-extra "7.0.1"
     tslib "1.10.0"
 
-"@salesforce/plugin-apex@0.1.16":
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-apex/-/plugin-apex-0.1.16.tgz#a95a0f6eb28a56700a1b67d3741f4b6e0a40282e"
-  integrity sha512-Odm4QLWNiXUHco5P2MyE9vH1/mfZ6ssGr3LhtVyvUaCkZA4kn++LRIQdMXmg/Fsbe4WEgISNYJCbgKYYeYtglA==
+"@salesforce/plugin-apex@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-apex/-/plugin-apex-0.1.4.tgz#a43f7fb020e4089a55ef7ba4ea70a0b79c43244f"
+  integrity sha512-GM6ZlDQZ4vsrIJlso4kqcxxlgpcHHfXSJQkfKkRIOk2FDaCGYSnnUk5MthrsXgX/q+AgR4V+ggTFoAXLt+ERNg==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/errors" "^1"
-    "@salesforce/apex-node" "0.1.16"
+    "@salesforce/apex-node" "0.1.4"
     "@salesforce/command" "3.0.3"
-    "@salesforce/core" "2.13.0"
+    "@salesforce/core" "2.11.0"
     chalk "^4.1.0"
     tslib "^1"
 
