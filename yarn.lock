@@ -662,7 +662,7 @@
     mkdirp "1.0.4"
     sfdx-faye "^1.0.9"
 
-"@salesforce/core@^2.1.4", "@salesforce/core@^2.1.6", "@salesforce/core@^2.14.0", "@salesforce/core@^2.15.2", "@salesforce/core@^2.15.4", "@salesforce/core@^2.16.3", "@salesforce/core@^2.18.6", "@salesforce/core@^2.2.0", "@salesforce/core@^2.20.1", "@salesforce/core@^2.6.0":
+"@salesforce/core@^2.1.4", "@salesforce/core@^2.1.6", "@salesforce/core@^2.14.0", "@salesforce/core@^2.15.2", "@salesforce/core@^2.15.4", "@salesforce/core@^2.16.3", "@salesforce/core@^2.17.0", "@salesforce/core@^2.2.0", "@salesforce/core@^2.20.0", "@salesforce/core@^2.20.1", "@salesforce/core@^2.6.0":
   version "2.20.5"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-2.20.5.tgz#043d4aa6fb7ffc5270fc69fbec08aa1a52a2f2b7"
   integrity sha512-hB4o4TuOGJo01rLmx84nf6KFGizDqLo5bmQ8bFlMZw5xKeQaP1Jc74se6hj+6eI5Nx331EvbD+YHphsuLbaJjQ==
@@ -728,7 +728,7 @@
     typescript "^4.1.3"
     xunit-file "^1.0.0"
 
-"@salesforce/kit@^1.2.0", "@salesforce/kit@^1.2.1", "@salesforce/kit@^1.2.2", "@salesforce/kit@^1.3.2", "@salesforce/kit@^1.4.3":
+"@salesforce/kit@^1.2.0", "@salesforce/kit@^1.2.1", "@salesforce/kit@^1.2.2", "@salesforce/kit@^1.3.2", "@salesforce/kit@^1.4.0", "@salesforce/kit@^1.4.3":
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-1.4.5.tgz#f892e16079e926b16f85977e3e48c86d950c8cb3"
   integrity sha512-EPR9BkbdLPr//CB9IXVPUyM0ANEvadlH7yfI1p1xA9lxzSakJk7w2CEds+8VDaJ9nlY60jjSWR8TpJWuPqU6dA==
@@ -789,6 +789,18 @@
     "@salesforce/core" "^2.15.4"
     tslib "^2"
 
+"@salesforce/plugin-org@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-org/-/plugin-org-1.3.3.tgz#6125fd28d466c874dc1b904d5237873494a9de13"
+  integrity sha512-1gAhUUysDZNHKoeIpyBbd+YeCQFlmNkko8XxxH4U0YzCwxT6v3NaRaKvU7+xJFXJp75TKtMy3Yec6Mlg+vD8Ag==
+  dependencies:
+    "@oclif/config" "^1"
+    "@salesforce/command" "^3.0.3"
+    "@salesforce/core" "^2.17.0"
+    "@salesforce/kit" "^1.4.0"
+    open "^7.3.1"
+    tslib "^2"
+
 "@salesforce/plugin-schema@1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@salesforce/plugin-schema/-/plugin-schema-1.0.4.tgz#a3d6eed44f450b8ca10178b2f553082020f06f0e"
@@ -814,14 +826,14 @@
     yeoman-environment "2.4.0"
     yeoman-generator "4.0.1"
 
-"@salesforce/plugin-user@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-user/-/plugin-user-1.1.2.tgz#7bd6b042593c0898d3bce5ae9c53c9ff8706d115"
-  integrity sha512-t8U/eFR+8KDc8cExpxWYheDvzf/8iypEyOYYvTKa3OKi4n2A0m0ql3sJVGfsu0FENy17Dv3eC/YUmtH9WaG0dQ==
+"@salesforce/plugin-user@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-user/-/plugin-user-1.2.0.tgz#041f14b2b30af09f5912ea459278148f1e047c37"
+  integrity sha512-NfGIG7ZTugmEUy9RiICE/191QcDpnXl42W+nOHbuv2rCOvPVd46VrtKvlqPhLo6EKQsqADzesFb9jE9rJrwzow==
   dependencies:
     "@oclif/config" "^1.17.0"
     "@salesforce/command" "^3.1.0"
-    "@salesforce/core" "^2.18.6"
+    "@salesforce/core" "^2.20.0"
     tslib "^2"
 
 "@salesforce/prettier-config@^0.0.2":
@@ -5892,7 +5904,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-open@^7.2.0:
+open@^7.2.0, open@^7.3.1:
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/open/-/open-7.4.2.tgz#b8147e26dcf3e426316c730089fd71edd29c2321"
   integrity sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==
