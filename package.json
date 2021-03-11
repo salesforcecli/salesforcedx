@@ -15,6 +15,7 @@
       "@salesforce/plugin-apex",
       "@salesforce/plugin-custom-metadata",
       "@salesforce/plugin-limits",
+      "@salesforce/plugin-org",
       "@salesforce/plugin-schema",
       "@salesforce/plugin-templates",
       "@salesforce/plugin-user",
@@ -25,6 +26,7 @@
   "pinnedDependencies": [
     "@salesforce/plugin-custom-metadata",
     "@salesforce/plugin-limits",
+    "@salesforce/plugin-org",
     "@salesforce/plugin-schema",
     "@salesforce/plugin-templates",
     "@salesforce/plugin-user",
@@ -35,6 +37,7 @@
     "@salesforce/plugin-apex": "0.1.4",
     "@salesforce/plugin-custom-metadata": "1.0.11",
     "@salesforce/plugin-limits": "1.0.4",
+    "@salesforce/plugin-org": "1.3.3",
     "@salesforce/plugin-schema": "1.0.4",
     "@salesforce/plugin-templates": "51.3.0",
     "@salesforce/plugin-user": "1.1.2",
