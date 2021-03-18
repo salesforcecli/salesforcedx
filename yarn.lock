@@ -789,10 +789,10 @@
     "@salesforce/core" "^2.15.4"
     tslib "^2"
 
-"@salesforce/plugin-org@1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-org/-/plugin-org-1.3.3.tgz#6125fd28d466c874dc1b904d5237873494a9de13"
-  integrity sha512-1gAhUUysDZNHKoeIpyBbd+YeCQFlmNkko8XxxH4U0YzCwxT6v3NaRaKvU7+xJFXJp75TKtMy3Yec6Mlg+vD8Ag==
+"@salesforce/plugin-org@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-org/-/plugin-org-1.5.0.tgz#1ac130aa0acb00664b7fa9fae56f4054de71e7cf"
+  integrity sha512-R7tf/SlqFxrWz92SmVYbTraZ4vIqWCxS1Gb4h8o817oxWvxlSw+kjEeUJSwi9s19bjYBmkR1++ZdvjAOuXEetA==
   dependencies:
     "@oclif/config" "^1"
     "@salesforce/command" "^3.0.3"
@@ -3747,7 +3747,7 @@ github-username@^3.0.0:
   dependencies:
     gh-got "^5.0.0"
 
-gitignore-parser@0.0.2, gitignore-parser@^0.0.2:
+gitignore-parser@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/gitignore-parser/-/gitignore-parser-0.0.2.tgz#f61259b985dd91414b9a7168faef9171c2eec5df"
   integrity sha1-9hJZuYXdkUFLmnFo+u+RccLuxd8=
@@ -6848,10 +6848,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-salesforce-alm@51.4.0:
-  version "51.4.0"
-  resolved "https://registry.yarnpkg.com/salesforce-alm/-/salesforce-alm-51.4.0.tgz#08d493cb9b265483a0816ce22627af836b1ef512"
-  integrity sha512-BrgoD3LmZaGlYXnhqG+tzjuQ0CUA3I8lvCAdGx6R7AuYW7wwBGQBvmIIfB+wl+o6/S9Ab8Fb5w05nyBnDJYdPQ==
+salesforce-alm@51.6.3:
+  version "51.6.3"
+  resolved "https://registry.yarnpkg.com/salesforce-alm/-/salesforce-alm-51.6.3.tgz#f7bdd740762ef3620e70bb1da5c3daad26ac1f7e"
+  integrity sha512-PmggjQvSAXHN4iEdiinLQ0jFpOr3kp31DOS0/4plwhr1+GtEdhR8pEdWfY/VqIxcSbu0rMP5EEKpI3taaB4j0w==
   dependencies:
     "@oclif/config" "^1.14.0"
     "@oclif/errors" "^1.2.2"
@@ -6873,7 +6873,6 @@ salesforce-alm@51.4.0:
     debug "^3.2.6"
     fast-xml-parser "^3.17.4"
     fs-extra "^4.0.3"
-    gitignore-parser "^0.0.2"
     glob "^7.1.6"
     heroku-cli-util "^8.0.12"
     js2xmlparser "^3.0.0"
