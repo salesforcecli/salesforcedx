@@ -40,12 +40,12 @@
     "@salesforce/plugin-custom-metadata": "1.0.11",
     "@salesforce/plugin-data": "0.4.3",
     "@salesforce/plugin-limits": "1.0.4",
-    "@salesforce/plugin-org": "1.5.0",
+    "@salesforce/plugin-org": "1.6.0",
     "@salesforce/plugin-schema": "1.0.4",
     "@salesforce/plugin-templates": "51.3.0",
-    "@salesforce/plugin-user": "1.2.0",
+    "@salesforce/plugin-user": "1.2.1",
     "@salesforce/sfdx-plugin-lwc-test": "0.1.7",
-    "salesforce-alm": "51.6.5",
+    "salesforce-alm": "51.6.6",
     "salesforce-lightning-cli": "3.0.0"
   },
   "devDependencies": {
