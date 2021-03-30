@@ -8,8 +8,8 @@ import * as fs from 'fs';
 import { expect } from 'chai';
 
 describe('will verify that plugin-apex version is never changed until we want to', () => {
-  it('will ensure plugin-apex is hardcoded to v1.0.4', () => {
+  it('will ensure plugin-apex is hardcoded to v0.1.20', () => {
     const json = JSON.parse(fs.readFileSync('package.json').toString());
-    expect(json['dependencies']['@salesforce/plugin-apex']).to.equal('0.1.4');
+    expect(json['dependencies']['@salesforce/plugin-apex']).to.equal('0.1.20');
   });
 });
