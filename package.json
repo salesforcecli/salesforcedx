@@ -25,6 +25,7 @@
     ]
   },
   "pinnedDependencies": [
+    "@salesforce/plugin-apex",
     "@salesforce/plugin-custom-metadata",
     "@salesforce/plugin-data",
     "@salesforce/plugin-limits",
@@ -36,7 +37,7 @@
     "salesforce-alm"
   ],
   "dependencies": {
-    "@salesforce/plugin-apex": "0.1.4",
+    "@salesforce/plugin-apex": "0.1.20",
     "@salesforce/plugin-custom-metadata": "1.0.11",
     "@salesforce/plugin-data": "0.4.3",
     "@salesforce/plugin-limits": "1.0.4",
@@ -104,7 +105,7 @@
     "format": "sf-format",
     "lint": "eslint 'src/**/*.ts'",
     "prepack": "sf-build",
-    "test": "sf-test",
+    "test": "echo 'Salesforcedx is an aggregator plugin that does not contain any tests'",
     "version": "oclif-dev readme && git add README.md"
   },
   "husky": {
