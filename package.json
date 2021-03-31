@@ -25,6 +25,7 @@
     ]
   },
   "pinnedDependencies": [
+    "@salesforce/plugin-apex",
     "@salesforce/plugin-custom-metadata",
     "@salesforce/plugin-data",
     "@salesforce/plugin-limits",
