@@ -7,6 +7,13 @@
 
 import * as LintCommand from 'salesforce-lightning-cli/commands/lightning/lint';
 
-class ForceLintCommand extends LintCommand {}
+class ForceLintCommand extends LintCommand {
+  public static readonly deprecated = {
+    message:
+      'To lint Aura components, use the @salesforce/eslint-plugin-aura node package. See https://github.com/forcedotcom/eslint-plugin-aura for details.',
+    name: 'force:lightning:lint',
+    version: 52,
+  };
+}
 
 module.exports = ForceLintCommand;
