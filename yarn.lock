@@ -803,10 +803,10 @@
     "@salesforce/core" "^2.15.4"
     tslib "^2"
 
-"@salesforce/plugin-org@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-org/-/plugin-org-1.6.2.tgz#1c90e12e6c7f0b14877373ddfe1f4135b349238d"
-  integrity sha512-tkDmGz74JsCUWqP6avO1NBtJoEHZa1fEae3R3szZqN9f+//82RXE6nKP6QNE1hh6v2HBie5wvOTKW0V7/fU7nA==
+"@salesforce/plugin-org@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/@salesforce/plugin-org/-/plugin-org-1.6.3.tgz#e98ad0f4fbbe0d863e8696f77b3bf453722d1d11"
+  integrity sha512-jayRfR8aBlS77ko+vHYjl8LWxASwU3tdgLSxr5sH7kLCokzbr4ibMb5kwCWklekLB8XswAzkVG6vL6cyig6WPg==
   dependencies:
     "@oclif/config" "^1"
     "@salesforce/command" "^3.0.3"
