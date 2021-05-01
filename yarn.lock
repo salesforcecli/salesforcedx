@@ -776,10 +776,10 @@
     csv-parse "^4.14.1"
     tslib "^2"
 
-"@salesforce/plugin-limits@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@salesforce/plugin-limits/-/plugin-limits-1.1.0.tgz#39c9408be5ee24630d53d4821713053e22ebfb7f"
-  integrity sha512-wOH+oXhpZ/p4EwuRFQMxxcl8TpvsUD64V4uQvU+NOzz2+A9pPPb90jBrK0hkKmDWeC/Jwkqxf8lTE8ymnMSKig==
+"@salesforce/plugin-limits@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-limits/-/plugin-limits-1.2.0.tgz#4294d02012d97f9f50251a3244d985dbec814c61"
+  integrity sha512-EXbSWIqHKKEiXuIc/6/SwkpxqrHjYjCKZrAteJspCcYhAlL7aqIN217YXzhWRUZv02zcHb/xAC6fDbSqVK1Mrg==
   dependencies:
     "@oclif/config" "^1"
     "@salesforce/command" "^3.0.3"
