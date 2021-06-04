@@ -712,7 +712,7 @@
     mkdirp "1.0.4"
     sfdx-faye "^1.0.9"
 
-"@salesforce/data@^0.1.6":
+"@salesforce/data@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@salesforce/data/-/data-0.1.5.tgz#8e244692c8097304eb9af649cf683a54053d3800"
   integrity sha512-bckCdMo3hN+o4zSU+aEp/aJWI5vcxZf+0RTv9a8CQ/2WxWy7JudUL9dEHyZ/WH0Kjpnv16bbsme+BYtiAlWWJg==
@@ -819,15 +819,15 @@
     "@salesforce/ts-types" "^1.2.2"
     tslib "^2.0.0"
 
-"@salesforce/plugin-data@0.4.9":
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-data/-/plugin-data-0.4.9.tgz#93cb9c9113de0d2dbbe34f402ca471f6306440a8"
-  integrity sha512-HTvB+cE+SMaVdkfPtD0Dy8PmTpmQoNS8q09xUARYPA0ZAfBi26xO8QbeNJ/YcWLeZ3HSF27nDjOO1ydVjwP89Q==
+"@salesforce/plugin-data@0.4.10":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-data/-/plugin-data-0.4.10.tgz#25cb1cc9148dea0dee24cee3e3500f7ff22b4470"
+  integrity sha512-EV2gisF2XvdVB8qChYFKwoyUtjE7q8MOq44W85nkJSqQVbzhMUECdMjxrVozFMUN6OFD/D9/Aikf4jquWoAzsA==
   dependencies:
     "@oclif/config" "^1"
     "@salesforce/command" "^3.0.5"
     "@salesforce/core" "^2.15.2"
-    "@salesforce/data" "^0.1.6"
+    "@salesforce/data" "^0.1.5"
     "@salesforce/ts-types" "^1.5.5"
     chalk "^4.1.0"
     csv-parse "^4.14.1"
