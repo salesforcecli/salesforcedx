@@ -7,7 +7,8 @@
   "files": [
     "/lib",
     "/messages",
-    "/oclif.manifest.json"
+    "/oclif.manifest.json",
+    "/scripts/deprecation-warning.js"
   ],
   "oclif": {
     "commands": "./lib/commands",
@@ -72,7 +73,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsdoc": "^35.1.2",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
+    "husky": "^4.3.8",
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
     "prettier": "^2.3.0",
@@ -106,7 +107,8 @@
     "lint": "eslint 'src/**/*.ts'",
     "prepack": "sf-build",
     "test": "echo 'Salesforcedx is an aggregator plugin that does not contain any tests'",
-    "version": "oclif-dev readme && git add README.md"
+    "version": "oclif-dev readme && git add README.md",
+    "preinstall": "node ./scripts/deprecation-warning.js"
   },
   "husky": {
     "hooks": {
