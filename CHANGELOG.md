@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [52.0.0](https://github.com/salesforcecli/salesforcedx/compare/v51.16.0...v52.0.0) (2021-06-10)
+
+
+### Features
+
+* deprecation and install warning ([85b2032](https://github.com/salesforcecli/salesforcedx/commit/85b2032ec148db25ce9033b1e6711edf7b1d6d39))
+
 ## [51.16.0](https://github.com/salesforcecli/salesforcedx/compare/v51.15.0...v51.16.0) (2021-06-04)
 
 ## [51.15.0](https://github.com/salesforcecli/salesforcedx/compare/v51.14.0...v51.15.0) (2021-05-27)
